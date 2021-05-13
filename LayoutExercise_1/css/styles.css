@@ -1,0 +1,56 @@
+body{
+       width: 90%;
+       margin:0 auto;
+}
+
+main{
+       overflow: auto;
+}
+
+nav{
+       background-color: black;
+       height: 20px;
+       margin: 0 1%;
+}
+
+#feature{
+       background-color: lightblue;
+}
+
+article, #feature{
+       margin: 1%;
+       height: 250px;
+}
+
+.column1, .column2, .column3 {
+       width: 20%;
+       margin: 0 1% 1% 1%;
+       /* float: left; */
+       background-color: tomato;
+       height: 200px;
+
+}
+
+
+footer{
+       background-color: black;
+       height: 20px;
+       margin: 0 1%;
+}
+
+section{
+       display: flex;
+       flex-direction: row;
+       margin-top: 1%;
+       justify-content: space-around;
+       align-items: center;
+}
+
+@media (max-width: 500px) {
+  section {
+    flex-direction: column;
+       }
+.column1, .column2, .column3 {
+       width: 98%;
+}
+}
